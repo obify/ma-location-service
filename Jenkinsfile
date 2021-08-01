@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('git repo & clean') {
+        stage('git repo and clean') {
             steps {
                 bat "rmdir  /s /q ma-location-service"
                 bat "git clone https://github.com/obify/ma-location-service.git"
